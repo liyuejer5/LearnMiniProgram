@@ -1,28 +1,18 @@
-// pages/home/home.js
+// pages/cart/cart.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: '你好，微信',
-    list: []
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://152.136.185.210:8000/api/n3/home/multidata',
-      success:(res) => {
-        console.log(res)
-        const data = res.data.data.banner.list;
-        this.setData({
-          list: data
-        })
-      }
-    })
+
   },
 
   /**
