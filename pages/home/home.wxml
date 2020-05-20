@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
 <view>{{title}}</view>
+<tab-control titles="{{['流行','新款','精选']}}"
+              bind:itemClick="handleTabClick"/>

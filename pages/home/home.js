@@ -1,3 +1,4 @@
+import request from '../../service/network.js'
 // pages/home/home.js
 Page({
 
@@ -7,12 +8,21 @@ Page({
   data: {
     title: '你好，微信'
   },
+  handleTabClick(event) {
+    // console.log(event)
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    request({
+      url: 'http://123.207.32.32:8000/home/multidata',
+    }).then(res => {
+      // console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
   },
 
   /**

@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "components/tab-control/tab-control"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
@@ -10,5 +11,6 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
-  }
+  },
+  "sitemapLocation": "sitemap8.json"
 }
